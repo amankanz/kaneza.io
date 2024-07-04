@@ -1,3 +1,5 @@
+https://amankanz.github.io/kaneza.io/
+
 # Kaneza's Portfolio
 
 Welcome to my portfolio! This repository contains the code for my personal portfolio website, where I showcase my projects, share my journey as a developer, and connect with others in the tech community.
