@@ -1,0 +1,17 @@
+.project-container {
+  margin-bottom: 3em;
+}
+
+.project-container ul {
+  list-style: none;
+}
+
+.project-container ul li:last-child {
+  margin-top: 10px;
+}
+
+.link-projs {
+  display: flex;
+  justify-content: space-between;
+  width: 4em;
+}
