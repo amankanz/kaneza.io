@@ -19,6 +19,19 @@
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
     <link rel="stylesheet" href="./assets/css/mystyle.css" />
+
+    <!-- EMAIL JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "li7id0R9yHsUMf4lm",
+        });
+      })();
+    </script>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -184,24 +197,39 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="#" onsubmit="return false">
             <div class="fields">
               <div class="field half">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" required />
               </div>
               <div class="field half">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" />
+                <input type="text" name="email" id="email" required />
+              </div>
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" required />
               </div>
               <div class="field">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
               </div>
             </div>
             <ul class="actions">
               <li>
-                <input type="submit" value="Send Message" class="primary" />
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="primary"
+                  id="submitBtn"
+                  onclick="send_mail()"
+                />
               </li>
               <li><input type="reset" value="Reset" /></li>
             </ul>
@@ -566,5 +594,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="./assets/js/email.js"></script>
+    <!-- <script src="./assets/js/form_checker.js"></script> -->
   </body>
 </html>
