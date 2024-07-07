@@ -15,3 +15,15 @@
   justify-content: space-between;
   width: 4em;
 }
+
+.hide-content {
+  display: none;
+}
+
+.read-more-btn {
+  cursor: pointer;
+
+  &:hover {
+    color: antiquewhite;
+  }
+}
