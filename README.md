@@ -1,4 +1,4 @@
-https://amankanz.github.io/kaneza.io/
+https://kanezaio.netlify.app/
 
 # Kaneza's Portfolio
 
