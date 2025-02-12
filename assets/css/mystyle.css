@@ -27,3 +27,20 @@
     color: antiquewhite;
   }
 }
+
+.intro-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: fit-content;
+}
+
+.audio {
+  border-radius: 45%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px; */
+  margin-left: 5px;
+  margin-right: 5px;
+}
