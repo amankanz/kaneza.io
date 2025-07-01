@@ -44,3 +44,29 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.privateLink {
+  pointer-events: none; /* disables click */
+  cursor: not-allowed; /* shows a blocked cursor */
+  position: relative;
+}
+
+.privateLink::after {
+  content: "Repo is private";
+  position: absolute;
+  bottom: 100%; /* show above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.privateLink:hover::after {
+  opacity: 1;
+}
