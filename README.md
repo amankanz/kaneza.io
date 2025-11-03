@@ -25,6 +25,5 @@ Hi, I'm Kaneza, an aspiring full-stack developer with a passion for coding and a
 
 Feel free to reach out if you have any questions, suggestions, or collaboration ideas:
 
-- **Email**: [amani.kaneza.zihaf@gmail.com](mailto:amani.kaneza.zihaf@gmail.com)
 - **LinkedIn**: [Kaneza](https://www.linkedin.com/in/fred-kaneza/)
 - **GitHub**: [amankanz](https://github.com/amankanz)
